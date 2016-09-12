@@ -3,10 +3,8 @@ import java.util.Arrays;
 /**
  * This demonstrates a method for making a deep copy of an array
  * using int's as an example.
- *
  */
 public class ArrayDeepCopy {
-
 	/**
 	 * Makes a deep copy of an array.
 	 * 
@@ -42,6 +40,7 @@ public class ArrayDeepCopy {
 		
 		// Java pre-built methods to print arrays.
 		// CHALLENGE: Try make this method yourself!!
+		System.out.println("Copy by Reference Example");
 		System.out.println("example1: " + Arrays.toString(example1));
 		System.out.println("example2: " + Arrays.toString(example2));
 		System.out.println(separator);
@@ -50,9 +49,22 @@ public class ArrayDeepCopy {
 		example1[0] = 0;
 		
 		// Print off to show results.
+		System.out.println("Copy by Reference Example - Changing a value in one changes in both");
 		System.out.println("example1: " + Arrays.toString(example1));
 		System.out.println("example2: " + Arrays.toString(example2));
+		System.out.println(separator);
 		
+		// However to if I make a deep copy (as seen in the method above main called deepCopy) 
+		// instead changing a value in example1 will have no effect on example2.
+		example2 = deepCopy(example1);
+		example1[0] = 100;
+		
+		System.out.println("Deep Copy Example - Two completely different arrays");
+		System.out.println("example1: " + Arrays.toString(example1));
+		System.out.println("example2: " + Arrays.toString(example2));
+		System.out.println(separator);
+		
+		// Run the program a try it out for yourself.
 	}
 
 }
