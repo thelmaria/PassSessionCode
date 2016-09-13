@@ -25,8 +25,8 @@ public class Omnivore extends Dinosaur {
 		Scanner keyboard = new Scanner(System.in);
 		System.out.println("What do you feel like? Leafs or meat? ");
 		userInput = keyboard.nextLine();
-		if(!(userInput.equalsIgnoreCase("leafs")) || !(userInput.equalsIgnoreCase("meat"))){
-			System.out.println("Please enter 'leafs' or 'meat'! ");
+		if(!(userInput.equalsIgnoreCase("leaves")) || !(userInput.equalsIgnoreCase("meat"))){
+			System.out.println("Please enter 'leaves' or 'meat'! ");
 			userInput = keyboard.nextLine();
 		}else{
 			System.out.println(getName() + " ate " + userInput);
