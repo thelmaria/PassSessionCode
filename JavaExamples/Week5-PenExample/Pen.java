@@ -25,7 +25,7 @@ public class Pen {
 	 * Actions a Pen can do.
 	 */
 	public void draw() {
-		if(empty == false) {
+		if( !empty ) {
 			System.out.println("A picture was drawn, it's good I swear!");
 		} else {
 			System.out.println("Can't draw the pen is empty!");
@@ -33,7 +33,7 @@ public class Pen {
 	}
 	
 	public void write() {
-		if(empty == false) {
+		if( !empty ) { 
 			System.out.println("The pen wrote something");
 		} else {
 			System.out.println("Can't write the pen is empty!");
@@ -41,7 +41,7 @@ public class Pen {
 	}
 	
 	public void refillPen() {
-		if(empty == false) {
+		if( !empty ) {
 			System.out.println("The pen is empty!");
 		} else {
 			empty = false;
