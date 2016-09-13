@@ -23,7 +23,7 @@ public class Omnivore extends Dinosaur {
 	public void eat() {
 		String userInput = "";
 		Scanner keyboard = new Scanner(System.in);
-		System.out.println("What do you feel like? Leafs or meat? ");
+		System.out.println("What do you feel like? Leaves or meat? ");
 		userInput = keyboard.nextLine();
 		if(!(userInput.equalsIgnoreCase("leaves")) || !(userInput.equalsIgnoreCase("meat"))){
 			System.out.println("Please enter 'leaves' or 'meat'! ");
