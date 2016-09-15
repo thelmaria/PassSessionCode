@@ -1,5 +1,8 @@
-# Pass Sessions - By Sav Tripodi
+# Pass Session Code Examples
 Pass Session Code.
+
+<i>Please note: The examples are not perfect implementations. They are examples made by students during the PASS classes
+to help explain concepts. If you find any errors feel free to add an issue or pull request (if you know how to use GitHub). If not post on the University fourms and I'll fix it.</i>
 
 All the code examples from <b>Programming Fundamentals</b> can be found in the Java folder above. 
 
@@ -28,7 +31,7 @@ As I've said in Pass Sessions I've learnt good habits through:
   <li>Personal research.</li>
 </ul>
 
-Here is a list of every book that has helped me on my path:
+Here is a list of books that have helped me with my study habits:
 <ul>
   <li><a href="https://www.amazon.com.au/Life-Half-Second-Achieve-Success-ebook/dp/B00FZFB2OI" target="_blank">Life in Half a Second</a></li>
   <li><a href="https://www.amazon.com/Mindset-Psychology-Success-Carol-Dweck/dp/0345472322" target="_blank">Mindset: The New Psychology of Success </a></li>
