@@ -11,13 +11,25 @@ public class Carnivore extends Dinosaur{
 	}
 	
 	public void kill(int amountToKill){
-		if(amountToKill < 1){
+		
+        if(amountToKill <= 0){
 			System.out.println("");
-		}else if(amountToKill == 1){
-			System.out.println(getName() + " killed " + amountToKill + " small dinosaurs!");
-		}else if(amountToKill > 1){
-			System.out.println(getName() + " killed " + amountToKill + " small dinosaurs! " 
-									+ getName() + " is on a rampage");
-		}
+		} else {
+          
+            // Our base message. 
+            System.out.print(getName() + " killed " + amountToKill + " small dinosaur");
+            
+            if(amountToKill == 1) { 
+       
+                // Finish the line
+			    System.out.println("!");
+		    } else { 
+
+                // We killed more than one dinosaur. The last word should be plural, and 
+                // we'll add a little more information. 
+                System.out.println("s! " + getName() + " is on a rampage! Watch out!");
+		    }
+        
+        }
 	}
 }
