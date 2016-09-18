@@ -2,18 +2,20 @@
 public class Pen extends DrawingObject {
 	
 	/* Instance Variables for Pen */
-	private boolean hasLid;
-	private boolean isPlastic;
 	
+	// inkQuantity represents a percentage. e.g. 0.9 = 90%
+    private double inkQuantity;
+    private PenType typeOfPen;
+
 	/* Constructor for Pen */
-	public Pen(String colour, int length, String brand, boolean hasLid, boolean isPlastic) {
+	public Pen(String colour, int length, String brand, double inkQuantity, PenType typeOfPen) {
 		// Calls the constructor of the Super class (Drawing Object).
 		super(colour, length, brand);
 		
 		// These variables are set in Pen because they
 		// belong to the Pen class.
-		this.hasLid = hasLid;
-		this.isPlastic = isPlastic;
+        this.inkQuantity = inkQuantity;
+        this.typeOfPen = typeOfPen;
 	}
 	
 	/**
@@ -30,6 +32,22 @@ public class Pen extends DrawingObject {
 	public void refillPen() {
 		System.out.println("Refilling pen");
 	}
+    
+    private double getInkQuantity() {
+      return this.inkQuantity;
+    }
+
+    private void setInkQuantity(double inkQuantity) {
+      this.inkQuantity = inkQuantity;
+    }
+
+    private PenType getTypeOfPen() {
+      return this.typeOfPen;
+    }
+
+    private void setTypeOfPen(PenType typeOfPen) {
+      this.typeOfPen = typeOfPen;
+    }
 	
 	/**
 	 * Overriding the toString() from DrawingObject (not Object).
@@ -39,7 +57,7 @@ public class Pen extends DrawingObject {
 		// super.toString() calls the toString() method of the super class
 		// DrawingObject! How cool is that!!
 		String returnString = super.toString();
-		returnString += "hasLid=" + hasLid + " isPlastic=" + isPlastic;
+		returnString += "inkQuantity=" + inkQuantity + " typeOfPen=" + typeOfPen;
 		
 		return returnString;
 	}

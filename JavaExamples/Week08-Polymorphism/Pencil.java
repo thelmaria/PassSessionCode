@@ -2,11 +2,12 @@
 public class Pencil extends DrawingObject {
 	
 	/* Instance Variables for Pencil */
-	private boolean isWooden;
+	// e.g. HB, B, 2B, etc
+	private String pencilGrading;
 	
-	public Pencil(String colour, int length, String brand, boolean isWooden) {
+	public Pencil(String colour, int length, String brand, String pencilGrading) {
 		super(colour, length, brand);
-		this.isWooden = isWooden;
+		this.pencilGrading = pencilGrading;
 	}
 	
 	/**
@@ -15,7 +16,15 @@ public class Pencil extends DrawingObject {
 	public void sharpen() {
 		System.out.println("sharpen");
 	}
-	
+
+	public String getPencilGrading() {
+		return pencilGrading;
+	}
+
+	public void setPencilGrading(String pencilGrading) {
+		this.pencilGrading = pencilGrading;
+	}
+
 	/**
 	 * Overriding the toString() from DrawingObject (not Object).
 	 */
@@ -24,7 +33,7 @@ public class Pencil extends DrawingObject {
 		// super.toString() calls the method of super class
 		// DrawingObject!
 		String returnString = super.toString();
-		returnString += "isWooden=" + isWooden;
+		returnString += "pencilGrading=" + pencilGrading;
 		
 		return returnString;
 	}

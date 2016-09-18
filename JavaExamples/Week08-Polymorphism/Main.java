@@ -3,8 +3,8 @@
 public class Main {
 	public static void main(String[] args) {
 
-		Pen pen1 = new Pen("blue", 6, "Columbia", true, true);
-		Pencil pencil1 = new Pencil("red", 10,"PAPER MATE",true);
+		Pen pen1 = new Pen("blue", 6, "Columbia", 0.9, PenType.BALLPOINT);
+		Pencil pencil1 = new Pencil("red", 10,"PAPER MATE", "HB");
 
 		// Pen object can be in the form of a DrawingObject
 		// as it is a subclass!
