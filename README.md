@@ -21,6 +21,13 @@ To learn the basics of git and github there are some links below:
   
 Feel free to change the code any way you like, it's all yours!
 
+<b>Algorithm Practice</b>
+<br>
+Tough algorithm questions are usually part of the exam and if they aren't they are always good for practice either way. The below links provide you to tons of questions that will stretch you and make you think more deeply. Give it a go, I promise it will be worth your time!
+* [Codingbat](http://codingbat.com/java) - Practice logic, string and algorithm questions in java, in the browser! 
+* [ProjectEuler](https://projecteuler.net/) - Progressively hard programming questions (based on math problems) - It's tought but I promise you your problem solving skills will dramatically increase if you have a go!
+* [HackerRank](https://www.hackerrank.com/) - Compete against other programmers in any type of problems you like, a majority of problems can be done in Java!
+
 <b>Good Study Habits</b>
 <br>
 As I've said in Pass Sessions I've learnt good habits through:
@@ -39,7 +46,6 @@ Here is a list of books that have helped me with my study habits:
   <li><a href="https://www.amazon.com/How-Become-Straight-Student-Unconventional/dp/0767922719" target="_blank">How to Become a Straight-A Student</a></li>
   <li><a href="https://www.amazon.com.au/Power-Habit-What-Life-Business-ebook/dp/B0055PGUYU" target="_blank">The Power of Habit</a></li>
 </ul>
-
 
 
 <b>Reminder:</b>
