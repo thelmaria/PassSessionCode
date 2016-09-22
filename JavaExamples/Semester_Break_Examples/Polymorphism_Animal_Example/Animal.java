@@ -45,9 +45,7 @@ public abstract class Animal {
 	// Slightly sad but hey, it happens.
 	// This isn't abstract because most animals die.
 	public boolean die() {
-		if(this.isAlive) {
-			this.isAlive = false;
-		}
+        this.isAlive = false;
 		return this.isAlive;
 	}
 	
